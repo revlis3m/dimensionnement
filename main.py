@@ -58,7 +58,7 @@ class UMTSDimensioningApp:
             peak_traffic = subscribers * erlangs_per_subscriber
             carriers_per_cell = frequency_count / reuse_factor
             traffic_per_cell = carriers_per_cell * 8 - 3
-            cell_capacity = traffic_per_cell * 0.406  # Adjusted for 1% block rate
+            cell_capacity = traffic_per_cell * 0.406  
             number_of_cells = peak_traffic / cell_capacity
             number_of_sites = number_of_cells / 3
             oversized_traffic = peak_traffic * 1.2
